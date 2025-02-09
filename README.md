@@ -49,8 +49,24 @@ URL: /api/subscriptions
   },
   ...
 ]
+
 Параметры запуска сервиса
 
+При запуске вашего сервиса вам может понадобиться несколько параметров конфигурации. Вот пример конфигурации, которую можно использовать:
+
+{
+  "SmtpSettings": {
+    "SmtpServer": "smtp.your-email-provider.com",
+    "SmtpPort": 587,
+    "Username": "your-email@example.com",
+    "Password": "your-email-password"
+  },
+  "DatabaseSettings": {
+    "ConnectionString": "Server=yourserver;Database=yourdb;User  Id=youruser;Password=yourpassword;"
+  },
+  "CheckInterval": 60000, // Интервал проверки цен в миллисекундах (например, 60000 = 1 минута)
+  "AllowedHosts": "*"
+}
 
 # Задание 2
 Класс "сервер" реализован в файле server.cs
