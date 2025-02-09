@@ -1,8 +1,6 @@
 public class Subscription
 {
-    public int Id { get; set; }
-    public string ApartmentUrl { get; set; }
-    public string Email { get; set; }
-    public decimal LastPrice { get; set; }
-    public DateTime CreatedAt { get; set; } = DateTime.Now;
+    public int Id { get; set; } // Идентификатор
+    public string UserEmail { get; set; } // Email пользователя
+    public string ApartmentUrl { get; set; } // URL квартиры
 }
